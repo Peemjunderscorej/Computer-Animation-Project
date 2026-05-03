@@ -14,7 +14,7 @@ swings, lags behind turns, dips on jumps, and snaps up on heavy landings.
 
 ---
 
-## Demo
+## Preview Image
 
 <img width="734" height="420" alt="Screenshot 2026-05-03 212710" src="https://github.com/user-attachments/assets/e6de301c-1d56-420a-854f-b37869c9d499" />
 
