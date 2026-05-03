@@ -4,7 +4,7 @@ A real-time tail simulation that brings a static Godzilla model to life using
 spring physics, inertia coupling, and a phase-delayed travelling sine wave.
 
 The Godzilla model used in this project ships with walking, arm, and leg
-animations baked in — but the tail has **no keyframes** and stays completely
+animations baked in, but the tail has **no keyframes** and stays completely
 still. This project drives the tail bones procedurally at runtime so the tail
 swings, lags behind turns, dips on jumps, and snaps up on heavy landings.
 
@@ -16,12 +16,12 @@ swings, lags behind turns, dips on jumps, and snaps up on heavy landings.
 
 ## Features
 
-- **Damped harmonic oscillator** per bone — heavy, springy feel
-- **Inertia coupling** to body acceleration — jump dips, landing snaps, turn lag
-- **Phase-delayed travelling sine wave** — wave visibly runs from base to tip
-- **Sideways-swing up-bias** — prevents floor-clipping during sharp turns
-- **Soft floor clamp** — guaranteed no ground penetration
-- **Runtime toggle** — turn the simulation on/off live for A/B comparison
+- **Damped harmonic oscillator** per bone : heavy, springy feel
+- **Inertia coupling** to body acceleration : jump dips, landing snaps, turn lag
+- **Phase-delayed travelling sine wave** : wave visibly runs from base to tip
+- **Sideways-swing up-bias** : prevents floor-clipping during sharp turns
+- **Soft floor clamp** : guaranteed no ground penetration
+- **Runtime toggle** : turn the simulation on/off live for A/B comparison
 
 ---
 
@@ -126,7 +126,7 @@ swing_lift = |heading_angle| * SWING_LIFT_GAIN * inertia_factor
 
 When the tail swings hard sideways, chained yaw rotations across many bones
 tend to drag the tip downward through the floor. This term lifts the tail
-upward proportionally to how far it's currently swung — the same balance
+upward proportionally to how far it's currently swung, the same balance
 trick real animals use.
 
 ### 5. Soft Floor Clamp
@@ -183,5 +183,5 @@ All tuning lives in the **TAIL CONFIG** section at the top of
 
 ### Tools & libraries
 
-- [Ursina engine](https://www.ursinaengine.org/) — game framework
-- [Blender](https://www.blender.org/) — bone renaming and re-export
+- [Ursina engine](https://www.ursinaengine.org/) : game framework
+- [Blender](https://www.blender.org/) : bone renaming and re-export
